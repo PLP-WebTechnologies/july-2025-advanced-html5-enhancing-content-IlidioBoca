@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #921515;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>Welcome to the Enhanced form</h1>
+    <h1>About this Page</h1>
+    <p>This page demonstrates HTML5 features including lists, tables, media, and a fully accessible form.</p>
+  </header>
+
+  <section>
+    <h1>Features</h1>
+    <h2>List</h2>
+        <ul>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+        </ul>
+  </section>
+
+  <section>
+    <h2>Sample Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>In Stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rice</td>
+          <td>1500,00MZN</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Bean</td>
+          <td>120.00MZN/Kg</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Potato</td>
+          <td>400.00MZN</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Chicken</td>
+          <td>280.00MZN</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQV-WxZwNGDsQJIo4kSlNLV1-LlYbymWL7Bgr68udlfEZIvvH-&s" alt="Placeholder Image">
+    <audio controls>
+      <source src="https://hinomp3.com/hinos/b/hino-do-fc-barcelona.mp3" type="audio/mpeg">
+    </audio>
+    <video width="520" height="340" controls>
+      <source src="https://media.gettyimages.com/id/2183938979/video/inter-miami-v-atlanta-united-2024-mls-cup-playoffs.mp4?s=mp4-640x640-gi&k=20&c=TBTbBbGl2dDM8qGetUM5tnxNUV9NdpEM80XdX9X5cbY=" type="video/mp4">
+      
+  </section>
+
+  <section>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name*:</label><br>
+        <input type="text" id="name" name="name" required minlength="3" placeholder="Your full name"><br><br>
+
+        <label for="email">Email*:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g., +258 84 123 4567" autocomplete="tel"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required minlength="5"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+          <option value="">Select...</option>
+          <option value="admin">Admin</option>
+          <option value="user">User</option>
+        </select><br><br>
+
+        <label>
+          <input type="checkbox" name="terms" required> I agree to the terms
+        </label><br><br>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <center>
+      <p>Enhanced-form</p>
+    <p>&copy; 2025 Ilidio Boca . All rights reserved.</p>
+    </center>
+</footer>
+
+</body>
+</html>
